@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.0/jquery.nicescroll.min.js"></script>
+
+  <script>
+    $(function() {
+      $('.chat-messages').niceScroll({
+        scrollspeed: 0,
+        mousescrollstep: 80
+      });
+    });
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    /* buddy list on the left */
+    .buddy-list {
+      background-color: black;
+      color: white;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    /* chat container to the right of the buddy list, contains the main chat, header, and chat info */
+    .main-container {
+      background-color: white;
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* chat header, to display chat name above the chat messages */
+    .chat-header {
+      background-color: blue;
+      color: white;
+      height: 50px;
+    }
+
+    /* chat content that holds the chat messages and chat info */
+    .chat-content {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* chat container that holds the chat messages and the chat input */
+    .chat-container {
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+    }
+
+    /* side content for chat info, like the people in the chat room */
+    .side-content {
+      background-color: red;
+      color: black;
+      flex: 1;
+    }
+
+    /* chat message log */
+    .chat-messages {
+      flex: 1;
+      height: 100vh;
+      overflow: auto;
+      word-spacing: 999999px;
+    }
+
+    /* chat input, where you would type to send chat messages */
+    .chat-input {
+      background-color: green;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="buddy-list">
+    Buddy List
+  </div>
+
+  <div class="main-container">
+    <div class="chat-header">Header</div>
+    <div class="chat-content">
+
+      <div class="chat-container">
+        <div class="chat-messages">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        </div>
+
+        <div class="chat-input">
+          Chat Input
+        </div>
+      </div>
+
+      <div class="side-content">Side Content</div>
+    </div>
+
+  </div>
+</body>
+
+</html>
